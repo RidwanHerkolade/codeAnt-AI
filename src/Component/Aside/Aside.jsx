@@ -5,7 +5,6 @@ import "./Aside.css";
 
 const Aside = ({isShow}) => {
   const [isActive, setIsActive] = useState(""); 
-
   const handleToggle = (view) => {
     setIsActive(view);
   };
@@ -67,5 +66,4 @@ const Aside = ({isShow}) => {
     </aside>
   );
 };
-
 export default Aside;
