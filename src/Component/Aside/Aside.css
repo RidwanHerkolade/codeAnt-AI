@@ -1,0 +1,110 @@
+.aside__logo {
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aside__divs {
+    position: relative;
+    padding: 1rem;
+    height: 100vh;
+}
+.aside__logos {
+    display: flex;
+    align-items: center;
+    /* margin: 1rem 0rem; */
+    gap: 1rem;
+}
+.aside__logos img{
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+.aside__logos span {
+    font-size: var(--font-new);
+    font-weight: 500;
+}
+.aside__links {
+    margin: 1rem 0rem;
+}
+.menus {
+    display: none;
+}
+ .link__content {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-small);
+    color: var(--color-white);
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+ }
+ .link__content.active {
+    background-color: var(--color-blue);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.4rem;
+    color: var(--color-white);
+ }
+ .link__content.active .link__con {
+    color: var(--color-white);
+ }
+ .link__content.active img {
+    color: var(--color-white);
+ }
+ .nav__link {
+    margin: 0.5rem 0rem;
+ }
+.select {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0.4rem 0rem;
+    font-size: var(--font-logo);
+    color: var(--color-dashlink);
+    border-radius: 0.3rem;
+    font-family: var(--font-family);
+    border: 1px solid var(--color-borderForm);
+}
+.select option {
+    width: 100%;
+}
+.nav__link img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+.link__con {
+    font-size: var(--font-logo);
+    color: var(--color-dashlink);
+    font-weight: 700;
+}
+.bottom__links {
+    position: absolute;
+    bottom: 0rem;
+}
+@media (min-width: 280px) and (max-width: 1024px) {
+    .bottom__links {
+        position: relative;
+    }
+    .menus {
+        display: flex;
+    }
+    .aside__divs {
+        padding: 1rem 0rem;
+        margin: 0rem 1rem;
+    }
+    .aside__div {
+        width: 100%;
+    }
+    .aside__links__mobile {
+        background-color: var(--color-white);
+        top: 0rem;
+        right: 0rem;
+        padding: 3rem 1rem;
+        z-index: 10000;
+        position: absolute;
+        width: 100%;
+    }
+    .aside__logo {
+        display: none;
+    }
+}

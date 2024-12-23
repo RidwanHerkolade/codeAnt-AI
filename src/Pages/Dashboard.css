@@ -1,0 +1,295 @@
+.dashboard__divs{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+.dashboard__div {
+    display: grid;
+    position: relative;
+    grid-template-columns: 18% auto;
+    width: 100%;
+}
+.asides__logo {
+    display: none;
+    margin: 0.5rem 0rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.aside__divss {
+    background-color: var(--color-dash);
+    justify-items: center;
+    top: 0rem;
+    position: sticky;
+}
+.section__divs {
+    background-color: var(--color-white);
+    padding: 01rem;
+}
+
+/* DASHBOARD STYLES */
+.dashcontent__div {
+    width: 100%;
+}
+.dashcontent__divs {
+    border: 1px solid var(--color-dash);
+    background-color: var(--color-white);
+}
+.dash__header {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    align-items: center;
+}
+.dash__h1 {
+    color: var(--color-repo);
+    font-size: var(--font-logos);
+    font-size: 700;
+}
+.total__repo{
+    color: var(--color-total);
+    font-size: var(--font-small);
+}
+.input {
+    padding: 0.4rem 0.9rem;
+    display: flex;
+    background-color: var(--color-white);
+    border: 0.5px solid var(--color-dash);
+    gap: 0.5rem;
+    margin: 0.5rem 0rem;
+    border-radius: 0.3rem;
+    align-items: center;
+}
+.input input {
+     background: transparent;
+     outline: none;
+     border: none;
+     font-size: var(--font-logo);
+     font-weight: 400;
+     color: var(--color-total);
+     font-family: var(--font-family);
+}
+.input input::placeholder{
+    font-size: var(--font-logo);
+    text-transform: capitalize;
+}
+.button__divs{
+    display: flex;
+    gap: 1rem;
+}
+.refresh__btn {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    gap: 0.3rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: var(--color-total);
+    border-radius: 0.3rem;
+    outline: none;
+    border: 0.5px solid var(--color-borderForm);
+}
+.repo__btn {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    font-weight: 500;
+    font-family: var(--font-family);
+    background-color: var(--color-blue);
+    cursor: pointer;
+    gap: 0.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    outline: none;
+    border: none;
+
+}
+.refresh__img {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+.dash__repo {
+    margin: 0rem 0rem;
+}
+.repo__divss {
+    height: calc(100vh - 11rem);
+    overflow-y: scroll;
+}
+.repo__con {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid var(--color-borderForm);
+}
+.repo__cons {
+    display: flex;
+    gap: 2rem;
+}
+.repo__cons span {
+  font-size: var(--font-logo);
+  color: var(--color-repotitle);
+  font-weight: 700;
+}
+.repo__conss {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem ;
+    gap: 1rem;
+}
+.public {
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0.1rem 1rem;
+    text-transform: capitalize;
+    font-size: var(--font-small);
+    background-color: var(--color-publicBlue);
+    border: 0.5px solid var(--color-borderblue);
+}
+.repo__des {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.major {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.major span {
+    font-size: var(--font-small);
+    font-weight: 500;
+    color: var(--color-repotitle);
+}
+.major img {
+    width: 0.5rem ;
+    height: 0.5rem;
+    object-fit: contain;
+}
+.majorS {
+    display: flex;
+    align-items: center;
+}
+.majorS img {
+    width: 0.8rem;
+    height: 0.8rem;
+    object-fit: contain;
+}
+.majorS span {
+    font-size: var(--font-small);
+    font-weight: 500;
+    color: var(--color-repotitle);
+    text-transform: capitalize;
+}
+@media (min-width: 280px) and (max-width: 600px) {
+    .dashboard__div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .dash__header {
+        flex-direction: column;
+        align-items: start;
+        padding: 0.5rem 1rem;
+    }
+    .asides__logo {
+        display:flex;
+        margin: 0.5rem 0rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .h1__content {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .aside__divss {
+        background-color: var(--color-dash);
+        padding: 0rem !important;
+        margin: 0rem;
+        top: 4rem;
+        right: 0rem;
+        width: 100%;
+        height: 0rem;
+        position: absolute;
+    }
+    .repo__des {
+        gap: 1.2rem;
+    }
+    .major span {
+        font-size: var(--font-book);
+        font-weight: 600;
+    }
+    .majorS span {
+        font-size: var(--font-book);
+        font-weight: 400;
+    }
+    .majorS img {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    .section__divs {
+        z-index: 1000;
+    }
+    .button__divs {
+        margin: 1rem 0rem;
+    }
+
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .dashboard__div {
+        grid-template-columns: 1fr;
+    }
+    .dash__header {
+        align-items: start;
+        padding: 0.5rem 1rem;
+    }
+    .asides__logo {
+        display:flex;
+        margin: 0.5rem 0rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .h1__content {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .aside__divss {
+        position: absolute;
+        right: 0rem;
+        width: 100%;
+    }
+    .aside__divss {
+        background-color: var(--color-dash);
+        padding: 0rem !important;
+        margin: 0rem;
+        top: 3.8rem;
+        right: 0rem;
+        width: 100%;
+        height: 0rem;
+        position: absolute;
+    }
+    .repo__des {
+        gap: 1.2rem;
+    }
+    .major span {
+        font-size: var(--font-book);
+        font-weight: 600;
+    }
+    .majorS span {
+        font-size: var(--font-book);
+        font-weight: 400;
+    }
+    .majorS img {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    .section__divs {
+        z-index: 1000;
+        top: 0rem;
+        left: 0rem ;
+        height: auto;
+    }
+
+}

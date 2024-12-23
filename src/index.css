@@ -1,0 +1,79 @@
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+}
+:root {
+  --background1: rgba(183, 4, 133, 0.1);
+  --font-family: "Monda", serif;
+  --font-fold: 21px;
+  --font-smallz: 9px;
+  --font-smalls: 11px;
+  --font-small: 14px;
+  --font-book: 13px;
+  --font-books: 12px;
+  --font-nav: 1rem;
+  --font-smallz: 13px;
+  --detailBg: #E5E5E5;
+  --font-logo: 16px;
+  --font-logos: 19px;
+  --color-borderImg: rgba(42, 40, 59, 0.25);
+  --font-new: 28px;
+  --font-news: 23px;
+  --color-blue: rgb(18, 24, 54);
+  --font-desq: 30px;
+  --font-desqs: 35px;
+  --font-desqss: 40px;
+  --font-header: 55px;
+  --color-grey: #D6DBF5;
+  --color-drop: #F5F5F5;
+  --color-footer: #080A12;
+  --color-alt: rgba(23, 23, 23, 1);
+  --color-border: rgba(230, 232, 240, 1);
+--color-total: rgba(65, 70, 81, 1);
+  --color-zero: #000000;
+  --color-black2: #0a3e72;
+  --color-yellow: #FBFF33;
+  --color-repo: rgba(24, 29, 39, 1);
+  --color-white: white;
+  --color-whitess: rgba(250, 250, 250, 1);
+  --color-dashlink: rgba(65, 70, 81, 1);
+  --color-dash: rgba(233, 234, 235, 1);
+  --color-nav: #EBECF0;
+  --color-whites:#FAFAFA;
+  --color-welcome: rgba(24, 29, 39, 1);
+  --color-green:#458A5D;
+  --color-dipgreen: #1C6335;
+ --color-ai: rgba(8, 23, 53, 1);
+  --color-purple: rgb(103,58,183);
+  --color-blue: rgba(0, 73, 198, 1);
+  --color-h3:  rgb(77, 89, 107);
+  --color-borderForm: rgba(216, 218, 229, 1);
+  --color-borderblue: rgba(178, 221, 255, 1);
+  --color-publicBlue: rgba(239, 248, 255, 1);
+  --color-repotitle: rgba(24, 29, 39, 1);
+  --box-shadow:  0px 0px 30px 0px rgba(8, 23, 53, 0.16);
+  
+}
+body {
+  padding: 0rem;
+  margin: 0rem;
+  font-family: var(--font-family);
+
+}
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+h1, h2,h3 ,h4,h5 {
+  padding: 0rem;
+  margin: 0rem;
+
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
