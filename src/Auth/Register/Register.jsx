@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Register.css";
 
 const Register = () => {
@@ -35,22 +36,22 @@ const Register = () => {
           </div>
           {isToggle === "SAAS" && (
             <div className="login__alternatives">
-              <div className="login__icon">
+              <Link className="login__icon" to="dashboard">
                 <img src="./img/icon5.png" alt="GitHub" />
                 <span>Sign in with GitHub</span>
-              </div>
-              <div className="login__icon">
+              </Link>
+              <Link className="login__icon" to="dashboard">
                 <img src="./img/icon4.png" alt="Bitbucket" />
                 <span>Sign in with Bitbucket</span>
-              </div>
-              <div className="login__icon">
+              </Link>
+              <Link className="login__icon" to="dashboard">
                 <img src="./img/icon3.png" alt="Azure" />
                 <span>Sign in with Azure</span>
-              </div>
-              <div className="login__icon">
+              </Link>
+              <Link className="login__icon" to="dashboard">
                 <img src="./img/icon2.png" alt="GitLab" />
                 <span>Sign in with GitLab</span>
-              </div>
+              </Link>
             </div>
           )}
 
